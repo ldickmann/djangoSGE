@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Cadastro de Categoria</h2>
+            </div>
+            <div class="card-body">
+                <form method="post" class="form">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container text-end">
+              <div class="row justify-content-end">
+                  <div class="col-4 p-0">
+                      <a href="{% url 'category_list' %}" class="btn btn-outline-warning mt-3">Cancelar e Voltar para a Lista</a>
+                  </div>
+              </div>
+        </div>
+    </div>
+{% endblock %}

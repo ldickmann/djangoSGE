@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-3">
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Deletar Fornecedor</h2>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>{{ object.name }}</strong></h5>
+                <p class="card-text">Deseja realmente excluir o fornecedor?</p>
+
+                <form method="post" class="form">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Deletar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container text-end">
+            <div class="row justify-content-end">
+                <div class="col-4 p-0">
+                    <a href="{% url 'supplier_list' %}" class="btn btn-outline-warning mt-3">Cancelar e voltar para a lista</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
