@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Informações de Entrada</h2>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <h3 class="card-title">{{ object.product }}</h3>
+                </li>
+                <li class="list-group-item">
+                    <p class="card-text">Fornecedor: <strong>{{ object.supplier }}</strong></p>
+                </li>
+                <li class="list-group-item">
+                    <p class="card-text">Quantidade: <strong>{{ object.quantity }}</strong></p>
+                </li>
+                <li class="list-group-item">
+                    <p class="card-text">{{ object.description }}</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container text-end">
+              <div class="row justify-content-end">
+                  <div class="col-4 p-0">
+                      <a href="{% url 'inflow_list' %}" class="btn btn-outline-warning mt-3">Voltar para a Lista de Entradas</a>
+                  </div>
+              </div>
+        </div>
+    </div>
+{% endblock %}
