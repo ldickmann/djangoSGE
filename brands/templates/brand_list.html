@@ -11,7 +11,7 @@ SGE - Marcas
             <form method="get" action="{% url 'brand_list' %}">
                 <div class="input-group">
                     <input type="text" class="form-control" name="name" placeholder="Nome" value="{{ request.GET.name }}">
-                    <button type="submit" class="btn btn-outline-warning">
+                    <button type="submit" class="btn btn-outline-warning ">
                         <i class="bi bi-search"></i>
                     </button>
                 </div>
@@ -44,19 +44,23 @@ SGE - Marcas
                         </a>
                     </td>
                     <td>{{ brand.name }}</td>
-                    <td>{{ brand.description }}</td>
+                    <td class="text-right">{{ brand.description }}</td>
                     <td>
-                        <a href="{% url 'brand_detail' brand.id %}" class="btn btn-info btn-sm">
-                            <i class="bi bi-eye"></i>
-                        </a>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end text-center">
+                            <a href="{% url 'brand_detail' brand.id %}" class="btn btn-info btn-sm btn-icon">
+                                <i class="bi bi-eye"></i>
+                            </a>
 
-                        <a href="{% url 'brand_update' brand.id %}" class="btn btn-warning btn-sm">
-                            <i class="bi bi-pencil"></i>
-                        </a>
+                            <a href="{% url 'brand_update' brand.id %}" class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+    
+    
+                            <a href="{% url 'brand_delete' brand.id %}" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </div>
 
-                        <a href="{% url 'brand_delete' brand.id %}" class="btn btn-danger btn-sm btn-delete">
-                            <i class="bi bi-trash"></i>
-                        </a>
                     </td>
                 </tr>
             {% endfor %}
