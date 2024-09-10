@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 
 {% block title %}
-SGE - Entradas
+SGE | Entradas
 {% endblock %}
 
 {% block content %}
 
     <div class="row mb-3">
-        <div class="col-md-6">
+        <div class="col-md-6 mt-2">
             <form method="get" action="{% url 'inflow_list' %}">
                 <div class="input-group">
                     <input type="text" class="form-control" name="product" placeholder="Produto" value="{{ request.GET.product }}">
@@ -18,7 +18,7 @@ SGE - Entradas
             </form>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 mt-2">
             <a href="{% url 'inflow_create' %}" class="btn btn-success float-end">
                 <i class="bi bi-plus"></i> Nova Entrada
             </a>

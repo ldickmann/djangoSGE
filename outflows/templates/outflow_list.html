@@ -11,7 +11,7 @@ SGE | Saídas
     <div class="mb-4"></div>
 
     <div class="row mb-3">
-        <div class="col-md-6">
+        <div class="col-md-6 mt-2">
             <form method="get" action="{% url 'outflow_list' %}">
                 <div class="input-group">
                     <input type="text" class="form-control" name="product" placeholder="Produto" value="{{ request.GET.product }}">
@@ -22,7 +22,7 @@ SGE | Saídas
             </form>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 mt-2">
             <a href="{% url 'outflow_create' %}" class="btn btn-success float-end">
                 <i class="bi bi-plus"></i> Nova Saída
             </a>
