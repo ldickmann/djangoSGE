@@ -27,6 +27,7 @@ class OutflowListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
         context['sales_metrics'] = metrics.get_sales_metrics()
         return context
 
+
 class OutflowCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     model = models.Outflow
     template_name = 'outflow_create.html'
