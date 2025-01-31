@@ -79,7 +79,7 @@ O sistema utiliza **JWT (JSON Web Token)** para autenticação segura das APIs.
   - Movimentações: `/api/inflows/` e `/api/outflows/`
   - Autenticação JWT: `/api/token/` e `/api/token/refresh/`
 
-## 📞 Desenvolvedor
+## Desenvolvedor
 Desenvolvido por **Lucas Elias Dickmann** ao decorror do curso Django Master - Aplicações Web com Python e Django da PycodeBR Treinamentos.
 [Seu LinkedIn](https://www.linkedin.com/in/seu-perfil) | [Seu GitHub](https://github.com/ldickmann)  
 
