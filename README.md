@@ -2,6 +2,14 @@
 
 Um sistema completo para controle de estoque, gestão de produtos e movimentações, desenvolvido com Django, Django REST Framework e Bootstrap
 
+## 🎨 Demonstração  
+
+### 📌 Página principal - Dashboard
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a3f1cbd1-7eee-4d4b-b5b7-e992db69fe71" alt="Lista de carros" width="800">
+</div>
+
+
 ## 🚀 Tecnologias Utilizadas
 - **Backend:** Django, Django REST Framework 
 - **Frontend:** Django Templates, Bootstrap 5
