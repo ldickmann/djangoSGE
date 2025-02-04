@@ -81,7 +81,9 @@ O sistema utiliza **JWT (JSON Web Token)** para autenticação segura das APIs.
 
 ## Desenvolvedor
 Desenvolvido por **Lucas Elias Dickmann** ao decorror do curso Django Master - Aplicações Web com Python e Django da PycodeBR Treinamentos.
-[Seu LinkedIn](https://www.linkedin.com/in/seu-perfil) | [Seu GitHub](https://github.com/ldickmann)  
+
+-
+-
 
 Sistema em constante evolução!
 
